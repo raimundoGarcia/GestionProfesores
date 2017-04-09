@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="618.0" prefWidth="651.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="gestionprofesores.FXMLDocumentController">
+   <children>
+      <TextArea fx:id="areaAñadidos" editable="false" layoutX="294.0" layoutY="58.0" prefHeight="131.0" prefWidth="328.0" />
+      <TextArea fx:id="areaDepartamento" editable="false" layoutX="294.0" layoutY="271.0" prefHeight="123.0" prefWidth="328.0" />
+      <TextArea fx:id="areaEdad" editable="false" layoutX="294.0" layoutY="430.0" prefHeight="123.0" prefWidth="328.0" />
+      <Label layoutX="14.0" layoutY="45.0" prefHeight="27.0" prefWidth="170.0" text="Añadir profesores">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="417.0" prefHeight="27.0" prefWidth="253.0" text="Listado de profesores según edad">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="258.0" prefHeight="27.0" prefWidth="253.0" text="Buscar profesores por departamento">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="72.0" text="NIF:" />
+      <Label layoutX="20.0" layoutY="103.0" text="Nombre:" />
+      <Label layoutX="20.0" layoutY="135.0" text="Departamento:" />
+      <Label layoutX="16.0" layoutY="164.0" text=" Edad:" />
+      <Label layoutX="21.0" layoutY="285.0" prefHeight="17.0" prefWidth="207.0" text="Escribe el nombre del departamento" />
+      <Label layoutX="17.0" layoutY="444.0" prefHeight="17.0" prefWidth="233.0" text="Escribe la edad por la que quieres buscar" />
+      <TextField fx:id="textNIF" layoutX="125.0" layoutY="68.0" />
+      <TextField fx:id="textNombre" layoutX="125.0" layoutY="99.0" />
+      <TextField fx:id="textDepart" layoutX="125.0" layoutY="131.0" />
+      <TextField fx:id="textEdad" layoutX="125.0" layoutY="160.0" />
+      <TextField fx:id="textBuscarDepart" layoutX="17.0" layoutY="320.0" prefHeight="25.0" prefWidth="253.0" />
+      <TextField fx:id="textBuscarEdad" layoutX="14.0" layoutY="479.0" prefHeight="25.0" prefWidth="253.0" />
+      <Button fx:id="botonGuardar" layoutX="363.0" layoutY="209.0" mnemonicParsing="false" onAction="#guardarArchivo" prefHeight="25.0" prefWidth="170.0" text="Guardar el Archivo" />
+      <Button fx:id="botonDepartamento" layoutX="59.0" layoutY="363.0" mnemonicParsing="false" onAction="#buscarPorDepartamento" prefHeight="25.0" prefWidth="170.0" text="Buscar" />
+      <Button fx:id="botonEdad" layoutX="59.0" layoutY="521.0" mnemonicParsing="false" onAction="#buscarPorEdad" prefHeight="25.0" prefWidth="170.0" text="Buscar" />
+      <Button fx:id="botonAñadir" layoutX="61.0" layoutY="209.0" mnemonicParsing="false" onAction="#añadirProfesor" prefHeight="25.0" prefWidth="170.0" text="Añadir Profesor" />
+   </children>
+</AnchorPane>
